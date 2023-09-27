@@ -7,14 +7,14 @@
 
 
 # Hardware_Code Repository
-cd Desktop
-git reset --hard
-git pull origin main
-chmod +x Hardware_test.py
-chmod +x hopper_slider.py
-chmod +x map_touchscreen.sh
-chmod +x run_HardwareTest.sh
-chmod +x touchscreenMappingShellScriptName
+# cd Desktop
+#git reset --hard
+#git pull origin main
+#chmod +x Hardware_test.py
+#chmod +x hopper_slider.py
+#chmod +x map_touchscreen.sh
+#chmod +x run_HardwareTest.sh
+#chmod +x touchscreenMappingShellScriptName
 
 # P003e Repository
 cd Desktop/Experiments/P003e
