@@ -51,4 +51,5 @@ chmod +x P035_FOAM_ExpProgram_RPi.py
 #the last synchronization. This means it doesn't re-upload every
 # existing file and, perhaps most importantly, means it CANNOT
 # DELETE EXISTING FILES.
+# rclone config reconnect gdrive: --auto-confirm
 rclone copy /home/blaisdelllab/Desktop/Data gdrive:RPiDataBackup
