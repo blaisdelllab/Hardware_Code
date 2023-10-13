@@ -19,6 +19,7 @@ chmod +x hopper_slider.py
 chmod +x map_touchscreen.sh
 chmod +x calibrate_touchscreen.sh
 chmod +x update_git.sh
+chmod +x reconnect_gdrive.sh
 
 # P003e Repository
 cd /home/blaisdelllab/Desktop/Experiments/P003e
