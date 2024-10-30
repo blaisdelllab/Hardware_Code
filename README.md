@@ -16,8 +16,7 @@ cd ..
 - Go back to Desktop/Hardware_Code instead of the current path
 chmod +x update_git.sh
 ### 3. Make experimental program executable for each program; include the Hardware_Code .py and .sh files (especially update_git.sh)
-ls
-- Check experimental is green bold (means chmod worked)
+- Check experimental is green bold using ls command (means chmod worked)
 crontab -e
 - Automate update_git.sh file
 - Hit “1”
