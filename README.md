@@ -5,7 +5,8 @@ All the under-the-hood software used for running experimental programs (includin
 ## Experimental code version control w/ Github 
 Pushing/pulling - GitHub cloning and data push
 ### 1. Create an Experiments folder
-Within Experiments folder, create another folder with the name of your experiment. This way, you can organize multiple experimental programs in the same place, and makes cloning from GitHub more simplistic
+Within Experiments folder, create another folder with the name of your experiment. This way, you can organize multiple experimental programs in the same place, and makes cloning from GitHub more simplistic.
+
 Go into correct folder to clone
 - cd Desktop/Experiments/
 - git clone https://github.com/blaisdelllab/P034.git
