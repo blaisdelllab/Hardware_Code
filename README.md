@@ -2,15 +2,14 @@
 All the under-the-hood software used for running experimental programs (including hardware tests).
 
 
-## Experimental code version control w/ Github 
-Pushing/pulling - GitHub cloning and data push
-### 1. Create an Experiments folder
+## Experimental code version control w/ Github - Pushing/pulling
+Brief walkthrough of adding a new Experiment:
+### 1. Create an Experiments folder (if it does not currently exist)
 Within Experiments folder, create another folder with the name of your experiment. This way, you can organize multiple experimental programs in the same place, and makes cloning from GitHub more simplistic.
 
-Go into correct folder to clone
+Navigate into correct folder to clone
 - cd Desktop/Experiments/
-- git clone https://github.com/blaisdelllab/P034.git
-- Clone folder from GitHub
+- "git clone https://github.com/blaisdelllab/P034.git" Note that this is an example directory that will clone existing folder from GitHub
 ### 2. Create a new “data” folder back into newly cloned folder
 - To make all programs executable, we first need to make update_git.sh executable
 cd ..
