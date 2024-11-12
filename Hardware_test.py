@@ -77,12 +77,12 @@ if operant_box_version:
     hopper_up_val = up_down_table[1][0]
     hopper_down_val = up_down_table[1][1]
 else:
-    root.geometry("x768")
+    root.geometry("1024x768")
     #This creates a black canvas with dimensions of height=600 and width=800
     canvas_1 = Canvas(root,
                       bg="black",
                       height=768,
-                      width=)
+                      width=1024)
     canvas_1.pack()
 
 seconds_remaining = 3 #Sets the final timer to start at 3 seconds
