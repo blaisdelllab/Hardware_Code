@@ -44,7 +44,7 @@ root.title("Test Hardware") # Creates the root title/title of the file
 # This creates the geometry of the gui, depending on version
 if operant_box_version:
     popen("sh /home/blaisdelllab/Desktop/Hardware_Code/map_touchscreen.sh") # Map touchscreen to operant box monitor
-    root.geometry("1024x768+1024+0")
+    root.geometry("1920x768+1024+0")
     root.attributes('-fullscreen',
                     True)
     canvas_1 = Canvas(root,
@@ -77,12 +77,12 @@ if operant_box_version:
     hopper_up_val = up_down_table[1][0]
     hopper_down_val = up_down_table[1][1]
 else:
-    root.geometry("1024x768")
+    root.geometry("x768")
     #This creates a black canvas with dimensions of height=600 and width=800
     canvas_1 = Canvas(root,
                       bg="black",
                       height=768,
-                      width=1024)
+                      width=)
     canvas_1.pack()
 
 seconds_remaining = 3 #Sets the final timer to start at 3 seconds
