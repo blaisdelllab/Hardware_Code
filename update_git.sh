@@ -6,7 +6,7 @@
 # Additionally, the last line copies the data folder to Google Drive
 # using the rclone client
 
-# Last updated: 2023-09-28
+# Last updated: 2024-11-12
 # Authors: Cyrus K. & Robert T.
 
 
