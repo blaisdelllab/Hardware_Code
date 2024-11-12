@@ -45,6 +45,8 @@ cd /home/blaisdelllab/Desktop/Experiments/P035
 git reset --hard
 git pull origin main
 chmod +x P035_FOAM_ExpProgram_RPi.py
+chmod +x P035b_miniproject.py
+chmod +x P035c_choicetask.py
 
 # Lastly, update the Google Drive data folder. This is done using
 # a rclone client–specifically the "copy" function, which scans
