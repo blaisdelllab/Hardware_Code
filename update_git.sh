@@ -31,6 +31,7 @@ chmod +x P003E_ExpProgram_RP.py
 cd /home/blaisdelllab/Desktop/Experiments/P033
 git reset --hard
 git pull origin main
+chmod +x polygon_fill.py
 chmod +x P033d_ExperimentalProgram.py
 
 # P034 Repository
@@ -38,7 +39,6 @@ cd /home/blaisdelllab/Desktop/Experiments/P034
 git reset --hard
 git pull origin main
 chmod +x P034_ExpProgram_RP.py
-chmod +x polygon_fill.py
 
 # P035 Repository
 cd /home/blaisdelllab/Desktop/Experiments/P035
