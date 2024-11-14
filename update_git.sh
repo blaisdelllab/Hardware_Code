@@ -38,6 +38,7 @@ cd /home/blaisdelllab/Desktop/Experiments/P034
 git reset --hard
 git pull origin main
 chmod +x P034_ExpProgram_RP.py
+chmod +x polygon_fill.py
 
 # P035 Repository
 cd /home/blaisdelllab/Desktop/Experiments/P035
