@@ -33,6 +33,7 @@ git reset --hard
 git pull origin main
 chmod +x P033d_ExperimentalProgram.py
 chmod +x polygon_fill.py
+chmod +x P033_AssignPaintCondition.py
 
 # P034 Repository
 cd /home/blaisdelllab/Desktop/Experiments/P034
