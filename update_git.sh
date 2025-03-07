@@ -7,59 +7,28 @@
 # using the rclone client
 
 # Last updated: 2025-03-06
-# Authors: Cyrus K. & Robert T.
+# Authors: Cyrus K.
 
-# Hardware_Code Repository
-cd /home/blaisdelllab/Desktop/Hardware_Code
-git reset --hard
-git pull origin main
-chmod +x Hardware_test.py
-chmod +x hopper_slider.py
-chmod +x map_touchscreen.sh
-chmod +x calibrate_touchscreen.sh
-chmod +x update_git.sh
-chmod +x reconnect_gdrive.sh
+# Function to update a repository if it exists
+for repo in \
+    "/home/blaisdelllab/Desktop/Hardware_Code" \
+    "/home/blaisdelllab/Desktop/Experiments/P003e" \
+    "/home/blaisdelllab/Desktop/Experiments/P033" \
+    "/home/blaisdelllab/Desktop/Experiments/P034" \
+    "/home/blaisdelllab/Desktop/Experiments/P035" \
+    "/home/blaisdelllab/Desktop/Experiments/P039"
+do
+    if [ -d "$repo/.git" ]; then
+        echo "Updating $repo..."
+        git -C "$repo" reset --hard
+        git -C "$repo" pull origin main
+    else
+        echo "Skipping $repo (not found)."
+    fi
+done
 
-# P003e Repository
-cd /home/blaisdelllab/Desktop/Experiments/P003e
-git reset --hard
-git pull origin main
-chmod +x P003E_ExpProgram_RP.py
+# Make all .sh and .py scripts in Desktop and its subdirectories executable
+find /home/blaisdelllab/Desktop -type f \( -name "*.sh" -o -name "*.py" \) -exec chmod +x {} \;
 
-# P033 Repository
-cd /home/blaisdelllab/Desktop/Experiments/P033
-git reset --hard
-git pull origin main
-chmod +x P033d_ExperimentalProgram.py
-chmod +x polygon_fill.py
-chmod +x P033_AssignPaintCondition.py
-
-# P034 Repository
-cd /home/blaisdelllab/Desktop/Experiments/P034
-git reset --hard
-git pull origin main
-chmod +x P034_ExpProgram_RP.py
-
-# P035 Repository
-cd /home/blaisdelllab/Desktop/Experiments/P035
-git reset --hard
-git pull origin main
-chmod +x P035_FOAM_ExpProgram_RPi.py
-chmod +x P035b_miniproject.py
-chmod +x P035c_choicetask.py
-
-# P039 Repository
-cd /home/blaisdelllab/Desktop/Experiments/P039
-git reset --hard
-git pull origin main
-chmod +x P039_ExpProgram_RPI.py
-
-# Lastly, update the Google Drive data folder. This is done using
-# a rclone client–specifically the "copy" function, which scans
-# both the source (local folder) and destination (remote folder)
-# and uploads only the files that are new or have changed since
-#the last synchronization. This means it doesn't re-upload every
-# existing file and, perhaps most importantly, means it CANNOT
-# DELETE EXISTING FILES.
-# rclone config reconnect gdrive: --auto-confirm
+# Sync Data to Google Drive
 rclone copy /home/blaisdelllab/Desktop/Data gdrive:RPiDataBackup
