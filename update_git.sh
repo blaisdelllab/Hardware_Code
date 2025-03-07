@@ -48,6 +48,7 @@ chmod +x P035_FOAM_ExpProgram_RPi.py
 chmod +x P035b_miniproject.py
 chmod +x P035c_choicetask.py
 
+# P039 Repository
 cd /home/blaisdelllab/Desktop/Experiments/P039
 git reset --hard
 git pull origin main
