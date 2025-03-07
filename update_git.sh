@@ -6,9 +6,8 @@
 # Additionally, the last line copies the data folder to Google Drive
 # using the rclone client
 
-# Last updated: 2024-11-12
+# Last updated: 2025-03-06
 # Authors: Cyrus K. & Robert T.
-
 
 # Hardware_Code Repository
 cd /home/blaisdelllab/Desktop/Hardware_Code
@@ -48,6 +47,11 @@ git pull origin main
 chmod +x P035_FOAM_ExpProgram_RPi.py
 chmod +x P035b_miniproject.py
 chmod +x P035c_choicetask.py
+
+cd /home/blaisdelllab/Desktop/Experiments/P039
+git reset --hard
+git pull origin main
+chmod +x P039_ExpProgram_RPI.py
 
 # Lastly, update the Google Drive data folder. This is done using
 # a rclone client–specifically the "copy" function, which scans
