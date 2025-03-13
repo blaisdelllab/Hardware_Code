@@ -15,12 +15,12 @@ exec nice -n 10 ionice -c 3 bash -c '
 # Function to update a repository if it exists
 for repo in \
     "/home/blaisdelllab/Desktop/Hardware_Code" \
+    "/home/blaisdelllab/Desktop/Video_Recording_Software" \
     "/home/blaisdelllab/Desktop/Experiments/P003e" \
     "/home/blaisdelllab/Desktop/Experiments/P033" \
     "/home/blaisdelllab/Desktop/Experiments/P034" \
     "/home/blaisdelllab/Desktop/Experiments/P035" \
-    "/home/blaisdelllab/Desktop/Experiments/P039" \
-    "/home/blaisdelllab/Desktop/Experiments/Video_Recording_Software"
+    "/home/blaisdelllab/Desktop/Experiments/P039" 
 do
     if [ -d "$repo/.git" ]; then
         echo "Updating $repo..."
