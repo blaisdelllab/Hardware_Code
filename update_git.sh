@@ -35,3 +35,4 @@ find /home/blaisdelllab/Desktop -type f \( -name "*.sh" -o -name "*.py" \) -exec
 
 # Sync Data to Google Drive
 rclone copy /home/blaisdelllab/Desktop/Data gdrive:RPiDataBackup
+'
