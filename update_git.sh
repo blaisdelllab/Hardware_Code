@@ -19,7 +19,8 @@ for repo in \
     "/home/blaisdelllab/Desktop/Experiments/P033" \
     "/home/blaisdelllab/Desktop/Experiments/P034" \
     "/home/blaisdelllab/Desktop/Experiments/P035" \
-    "/home/blaisdelllab/Desktop/Experiments/P039"
+    "/home/blaisdelllab/Desktop/Experiments/P039" \
+    "/home/blaisdelllab/Desktop/Experiments/Video_Recording_Software"
 do
     if [ -d "$repo/.git" ]; then
         echo "Updating $repo..."
