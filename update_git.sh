@@ -6,7 +6,7 @@
 # Additionally, the last line copies the data folder to Google Drive
 # using the rclone client
 
-# Last updated: 2025-03-06
+# Last updated: 2025-03-13
 # Authors: Cyrus K.
 
 # Run the entire script with lower CPU and I/O priority
