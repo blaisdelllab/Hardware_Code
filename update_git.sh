@@ -10,7 +10,7 @@
 # Authors: Cyrus K.
 
 # Run the entire script with lower CPU and I/O priority
-exec nice -n 10 ionice -c 3 bash -c '
+exec nice -n 5 ionice -c 3 bash -c '
 
 # Function to update a repository if it exists
 for repo in \
