@@ -15,7 +15,7 @@ exec nice -n 5 ionice -c 3 bash -c '
 # Function to update a repository if it exists
 for repo in \
     "/home/blaisdelllab/Desktop/Hardware_Code" \
-    "/home/blaisdelllab/Desktop/Experiments/P003e" \
+    "/home/blaisdelllab/Desktop/Experiments/P003" \
     "/home/blaisdelllab/Desktop/Experiments/P033" \
     "/home/blaisdelllab/Desktop/Experiments/P034" \
     "/home/blaisdelllab/Desktop/Experiments/P035" \
