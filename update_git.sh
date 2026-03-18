@@ -18,7 +18,8 @@ for repo in \
     "/home/blaisdelllab/Desktop/Experiments/P003" \
     "/home/blaisdelllab/Desktop/Experiments/P033" \
     "/home/blaisdelllab/Desktop/Experiments/P035" \
-    "/home/blaisdelllab/Desktop/Experiments/P042" 
+    "/home/blaisdelllab/Desktop/Experiments/P042" \
+    "/home/blaisdelllab/Desktop/Experiments/P043"
 do
     if [ -d "$repo/.git" ]; then
         echo "Updating $repo..."
